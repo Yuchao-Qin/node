@@ -1,0 +1,11 @@
+<% include head %>
+    <ul>
+        <% articles.forEach((element) => { %>
+            <li>
+                <a href="/articles/<%= element.id %>">
+                    <%= element.title %>
+                </a>
+            </li>
+        <% }) %>
+    </ul>
+<% include foot %>
