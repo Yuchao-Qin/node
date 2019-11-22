@@ -19,7 +19,7 @@ class Article {
 
     static create(data, cb) {
         const sql = 'INSERT INTO articles( title, content) VALUES (?, ?)';
-        db.run(sql, data.title, data.content, id, cb);
+        db.run(sql, data.title, data.content, cb);
     }
 
     static delete(id, cb) {
